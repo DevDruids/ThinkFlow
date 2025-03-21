@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  color: #ffffff;
 }
 
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Header */
 
@@ -14,6 +18,7 @@
   align-items: center;
   height: 15vh;
   background-color: black;
+  color: #ffffff;
 }
 
 .header-container{
@@ -136,3 +141,113 @@
 .freeVersion-btn:active{
   transform: scale(0.95);
 }
+
+/* Main Section */
+
+.header-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 110px;
+}
+
+.title-headerSect{
+  font-weight: bold;
+  font-size: 58px;
+  width: 600px;
+  height: 120px;
+  text-align: center;
+  line-height: 59px;
+  letter-spacing: -1.94px;
+}
+
+.underTitle-headerSect{
+  font-size: 21px;
+  text-align: center;
+  width: 420px;
+  height: auto;
+  line-height: 22.7px;
+  letter-spacing: -0.32px;
+  margin-top: 60px;
+  font-weight: 600;
+}
+
+.button-container-headerSect{
+  margin-top: 25px;
+}
+
+.btn-headerSect{
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: white;
+  transition: all .3s ease;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.btn-headerSect:hover{
+  transform: scale(1.05);
+}
+
+.btn-headerSect:active{
+  transform: scale(0.95);
+}
+
+/* Article Frame */
+
+.article-frame{
+  display: flex;
+  place-content: center;
+  margin-top: 215px;
+}
+
+/* Companie Section */
+
+.BestTeams-section {
+  margin-top: 100px;
+}
+
+.wrapper-bestTeamsSect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-bestTeamsSect {
+  font-weight: bold;
+  line-height: 37.1px;
+  letter-spacing: -0.92px;
+  font-size: 34.06px;
+  color: #050505;
+}
+
+.underTitle-bestTeamsSect {
+  font-size: 14px;
+  line-height: 17.4px;
+  letter-spacing: 0.01px;
+  width: 435px;
+  text-align: center;
+  color: #050505;
+}
+
+.bestTeamsSect-btn{
+  font-size: 14px;
+  line-height: 18.2px;
+  color: #050505;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  transition: all .3s ease;
+}
+
+.bestTeamsSect-btn:hover{
+  transform: scale(1.05);
+}
+
+.companies-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.companies-list-item {}
