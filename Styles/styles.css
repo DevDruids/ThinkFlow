@@ -205,7 +205,7 @@ button{
 /* Companie Section */
 
 .BestTeams-section {
-  margin-top: 100px;
+  padding-top: 25vh;
 }
 
 .wrapper-bestTeamsSect {
@@ -246,8 +246,214 @@ button{
 }
 
 .companies-list{
+  padding-top: 50px;
+  align-items: center;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
-.companies-list-item {}
+.companies-list ul{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 50px;
+}
+
+.companies-list-item img{
+  width: 75px;
+  height: auto;
+}
+
+.companies-list ul > .companies-list-item:nth-child(13){
+  grid-column: 3 / 4;
+}
+
+.companies-list ul > .companies-list-item:nth-child(14){
+  grid-column: 4 / 6;
+}
+
+/* Posibilities Section */
+
+.posibilities-section {
+  padding-top: 40vh;
+}
+
+.wrapper-posibSect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-posibSect {
+  padding-bottom: 100px;
+  font-weight: bold;
+  font-size: 44.06px;
+  line-height: 37.1px;
+  letter-spacing: -0.92px;
+  max-width: 364px;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  padding-bottom: 200px;
+}
+
+.box:last-child{
+  padding-bottom: 0;
+}
+
+.box[data-status="wiki-box"] .box-btn, 
+.box[data-status="wiki-box"] .box-btn a {
+  color: #EA4E43;
+  transition: all .3s ease;
+}
+
+.box[data-status="docs-box"] .box-btn, 
+.box[data-status="docs-box"] .box-btn a {
+  color: #996600;
+  transition: all .3s ease;
+}
+
+.box[data-status="projects-box"] .box-btn, 
+.box[data-status="projects-box"] .box-btn a {
+  color: #0A85D1;
+  transition: all .3s ease;
+}
+
+.box-info{
+  position: absolute;
+  left: 20%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.box-title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  padding-bottom: 15px;
+  gap: 10px;
+}
+
+.box-icon{
+  height: 40px;
+  width: auto;
+  margin-top: -15px;
+}
+
+.box-underTitle {
+  width: 171.75px;
+  font-size: 16px;
+  line-height: 17.4px;
+  letter-spacing: 0.01px;
+  padding-bottom: 25px;
+}
+
+.box-main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+}
+
+.box-btn:hover{
+  transform: scale(1.05);
+}
+
+.box-btn:active{
+  transform: scale(0.95);
+}
+
+.box-frame{
+  border: 1px solid black;
+}
+
+/* Consolidate Toold Section */
+
+.consolidateTools-Section {
+  padding-top: 100px;
+  position: relative;
+}
+
+.wrapper-toolsSect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container-toolsSect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 200px;
+}
+
+.title-container-toolsSect {
+  width: 360px;
+}
+
+.title-toolsSect {
+  text-align: center;
+  font-weight: bold;
+  font-size: 44.06px;
+  line-height: 37.1px;
+  letter-spacing: -0.92px;
+}
+
+.drawingWomen-picture-container{
+  right: 32%;
+  top: 18%;
+}
+
+.container-toolsSect {
+}
+
+.containerS-titleH2-toolsSect {
+  width: 555px;
+}
+
+.titleH2-toolsSect {
+  font-size: 29.4px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 25.7px;
+  letter-spacing: 0;
+}
+
+.author-toolsSect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.authorInfo-toolsSect{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.icon-toolssect img{
+  width: 120px;
+  height: auto;
+}
+
+.authorName-toolsSect {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14.4px;
+  letter-spacing: 0.05px;
+}
+
+.authorDescription-toolsSect {
+  font-size: 14px;
+  line-height: 14.4px;
+  letter-spacing: 0.08px;
+}
